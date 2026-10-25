@@ -1,5 +1,5 @@
-@font-face{font-family:"Press Start 2P";src:url("fonts/PressStart2P-Regular.ttf")}
-@font-face{font-family:"VT323";src:url("fonts/VT323-Regular.ttf")}
+@font-face{font-family:"Press Start 2P";src:url("PressStart2P-Regular.ttf")}
+@font-face{font-family:"VT323";src:url("VT323-Regular.ttf")}
 
 *{box-sizing:border-box}
 
