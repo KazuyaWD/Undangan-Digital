@@ -1,0 +1,221 @@
+@font-face{font-family:"Press Start 2P";src:url("fonts/PressStart2P-Regular.ttf")}
+@font-face{font-family:"VT323";src:url("fonts/VT323-Regular.ttf")}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  overflow:hidden;
+  font-family:"VT323",monospace;font-size:1.4rem;
+  color:#3a1442;
+  text-align:center
+}
+
+h1,h2,h3,.small,.btn{
+  font-family:"Press Start 2P",monospace;font-weight:normal
+}
+
+p{margin:.3em 0}
+
+.background{
+  position:fixed;
+  inset:-2%;
+  background:url("Background.png") center/cover
+}
+
+/* ---------- Panggung ---------- */
+.envelope-scene{
+  position:fixed;
+  inset:0;
+  display:grid;
+  place-items:center
+}
+
+.cover{
+  position:absolute;
+  top:5%;
+  left:0;
+  right:0;
+  color:#fff;
+  text-shadow:3px 3px 0 #3a1442;
+  transition:opacity .3s
+}
+
+.cover-small{
+  font-family:"Press Start 2P",monospace;
+  font-size:.7rem
+}
+
+.cover h1{
+  font-size:clamp(1rem,5vw,1.8rem);
+  line-height:1.5;
+  margin:.5em 0
+}
+
+.envelope-hint{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:8dvh;
+  margin:auto;
+  width:max-content;
+  padding:4px 14px;
+  background:#fff8dc;
+  transition:opacity .3s
+}
+
+/* ---------- Amplop ---------- */
+.envelope{
+  position:relative;
+  width:min(86vw,440px,62dvh);
+  aspect-ratio:160/112;
+  cursor:pointer
+}
+
+.envelope > img{
+  position:absolute;
+  pointer-events:none
+}
+
+.envelope-back{
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1
+}
+.envelope-front{
+  top:0;
+  left:-.3125%;
+  width:100.625%;
+  height:100%;
+  z-index:3
+}
+
+.envelope-lock{
+  top:34%;
+  left:42.5%;
+  width:15%;
+  z-index:6;
+  transition:opacity .2s
+}
+
+/* Tutup amplop: dua gambar yang dibalik bergantian */
+.flap-closed{
+  top:0;
+  left:-.3125%;
+  width:100.625%;
+  height:43.75%;
+  z-index:4;
+  transform-origin:top;
+  transform:perspective(700px) rotateX(0);
+  transition:transform .3s 1.1s
+}
+
+.flap-open{
+  bottom:100%;
+  left:0;
+  width:100%;
+  height:44.64%;
+  z-index:1;
+  transform-origin:bottom;
+  transform:perspective(700px) rotateX(-90deg);
+  transition:transform .3s .8s
+}
+
+/* ---------- Kertas ---------- */
+.envelope-paper{
+  position:absolute;
+  z-index:2;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:88%;
+  height:95%;
+  display:flex;
+  border:20px solid transparent;
+  border-image:url("paper.svg") 14 fill / 20px stretch;
+  transition:width .8s,height .8s,z-index 0s .8s
+}
+
+.paper-content{
+  flex:1;
+  min-width:0;
+  min-height:0;
+  overflow-y:auto;
+  padding:0 8px;
+  opacity:0;pointer-events:none;
+  transition:opacity .2s
+}
+
+/* ---------- Saat amplop terbuka ---------- */
+.open .cover,.open .envelope-hint,.open .envelope-lock{opacity:0}
+.open .flap-closed{
+  transform:perspective(700px) rotateX(90deg);
+  transition:transform .3s
+}
+
+.open .flap-open{
+  transform:perspective(700px) rotateX(0);
+  transition:transform .3s .3s
+}
+
+.open .envelope-paper{
+  z-index:5;
+  width:min(92vw,480px);
+  height:min(78dvh,720px);
+  transition:width .8s .6s,height .8s .6s,z-index 0s .9s
+}
+
+.open .paper-content{
+  opacity:1;
+  pointer-events:auto;
+  transition:opacity .4s 1.3s
+}
+
+/* ---------- Isi undangan ---------- */
+.small{
+  font-size:.6rem;
+  color:#8f2580
+}
+
+.names{
+  font-size:clamp(1.1rem,6vw,1.7rem);
+  line-height:1.6;
+  margin:.7em 0
+}
+
+.amp{color:#C036A9}
+.hero-heart{
+  width:40px;
+  margin:4px 0 12px
+}
+.strong{font-size:1.2em}
+
+.panel{
+  margin:20px 6px 0;
+  padding:12px;
+  background:#fff;
+  border:3px solid #C036A9
+}
+
+.panel h3{
+  font-size:.68rem;
+  line-height:1.6;
+  color:#8f2580;
+  margin:0 0 .8em
+}
+
+.btn{
+  display:inline-block;
+  font-size:.62rem;
+  color:#fff;
+  background:#C036A9;
+  border:0;
+  padding:12px 14px;
+  margin:12px 0;
+  text-decoration:none;
+  cursor:pointer
+}
+
+.foot{margin:24px 0}

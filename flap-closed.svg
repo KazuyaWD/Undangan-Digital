@@ -1,0 +1,11 @@
+<svg width="161" height="49" viewBox="0 0 161 49" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="#stroke0_2_945" fill="#C036A9"/>
+<use xlink:href="#stroke0_2_945" fill="white" fill-opacity="0.4"/>
+<mask id="stroke1_2_945" fill="white">
+<path d="M81 49L160.5 0H0L81 49Z"/>
+</mask>
+<path d="M81 49L160.5 0H0L81 49Z" stroke-width="2" stroke="black" mask="url(#stroke1_2_945)"/>
+<defs>
+<path id="stroke0_2_945" d="M81 49L160.5 0H0L81 49Z"/>
+</defs>
+</svg>

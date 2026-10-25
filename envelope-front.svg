@@ -1,0 +1,25 @@
+<svg width="161" height="112" viewBox="0 0 161 112" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="#stroke0_2_960" fill="#C036A9"/>
+<use xlink:href="#stroke0_2_960" fill="white" fill-opacity="0.4"/>
+<mask id="stroke1_2_960" fill="white">
+<path d="M81 49L160.5 112H0L81 49Z"/>
+</mask>
+<path d="M81 49L160.5 112H0L81 49Z" stroke-width="2" stroke="black" mask="url(#stroke1_2_960)"/>
+<use xlink:href="#stroke2_2_960" fill="#C036A9"/>
+<use xlink:href="#stroke2_2_960" fill="white" fill-opacity="0.4"/>
+<mask id="stroke3_2_960" fill="white">
+<path d="M81 49L0 112V0L81 49Z"/>
+</mask>
+<path d="M81 49L0 112V0L81 49Z" stroke-width="2" stroke="black" mask="url(#stroke3_2_960)"/>
+<use xlink:href="#stroke4_2_960" fill="#C036A9"/>
+<use xlink:href="#stroke4_2_960" fill="white" fill-opacity="0.4"/>
+<mask id="stroke5_2_960" fill="white">
+<path d="M81 49L160.5 0V112L81 49Z"/>
+</mask>
+<path d="M81 49L160.5 0V112L81 49Z" stroke-width="2" stroke="black" mask="url(#stroke5_2_960)"/>
+<defs>
+<path id="stroke0_2_960" d="M81 49L160.5 112H0L81 49Z"/>
+<path id="stroke2_2_960" d="M81 49L0 112V0L81 49Z"/>
+<path id="stroke4_2_960" d="M81 49L160.5 0V112L81 49Z"/>
+</defs>
+</svg>
