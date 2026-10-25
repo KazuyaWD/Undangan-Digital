@@ -1,5 +1,5 @@
-@font-face{font-family:"Press Start 2P";src:url("PressStart2P-Regular.ttf")}
-@font-face{font-family:"VT323";src:url("VT323-Regular.ttf")}
+@font-face{font-family:"Press Start 2P";src:url("fonts/PressStart2P-Regular.ttf")}
+@font-face{font-family:"VT323";src:url("fonts/VT323-Regular.ttf")}
 
 *{box-sizing:border-box}
 
@@ -23,7 +23,6 @@ p{margin:.3em 0}
   background:url("Background.png") center/cover
 }
 
-/* ---------- Panggung ---------- */
 .envelope-scene{
   position:fixed;
   inset:0;
@@ -64,7 +63,6 @@ p{margin:.3em 0}
   transition:opacity .3s
 }
 
-/* ---------- Amplop ---------- */
 .envelope{
   position:relative;
   width:min(86vw,440px,62dvh);
@@ -100,7 +98,6 @@ p{margin:.3em 0}
   transition:opacity .2s
 }
 
-/* Tutup amplop: dua gambar yang dibalik bergantian */
 .flap-closed{
   top:0;
   left:-.3125%;
@@ -123,7 +120,6 @@ p{margin:.3em 0}
   transition:transform .3s .8s
 }
 
-/* ---------- Kertas ---------- */
 .envelope-paper{
   position:absolute;
   z-index:2;
@@ -148,7 +144,6 @@ p{margin:.3em 0}
   transition:opacity .2s
 }
 
-/* ---------- Saat amplop terbuka ---------- */
 .open .cover,.open .envelope-hint,.open .envelope-lock{opacity:0}
 .open .flap-closed{
   transform:perspective(700px) rotateX(90deg);
@@ -173,7 +168,6 @@ p{margin:.3em 0}
   transition:opacity .4s 1.3s
 }
 
-/* ---------- Isi undangan ---------- */
 .small{
   font-size:.6rem;
   color:#8f2580
@@ -186,7 +180,7 @@ p{margin:.3em 0}
 }
 
 .amp{color:#C036A9}
-.hero-heart{
+.person-heart{
   width:40px;
   margin:4px 0 12px
 }
